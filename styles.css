@@ -1,0 +1,153 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+  
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --soft_blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --very_darkblue_main: hsl(217, 54%, 11%);
+    --very_darkblue_card:  hsl(216, 50%, 16%);
+    --very_darkblue_line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    --typography: "Outfit", sans-serif;
+
+}
+
+
+body{
+    background-color: var(--very_darkblue_main);
+    font-family: var(--typography);
+  
+}
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.card__container{
+    background-color: var(--very_darkblue_card);
+    border-radius: 12px;
+    width: 330px;
+    height: 540px;
+    
+ }
+
+.card__image{
+    background-image: url(./images/image-equilibrium.jpg);
+    border-radius: 6px;
+    height: 280px;
+    width: 280px;
+    margin: 24px auto 12px;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.card__image__view{
+    opacity: 0;
+    height: 280px;
+    width: 280px;
+    background-image: url(./images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--cyan);
+   
+}
+
+.card__image__view:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.card__information{
+
+padding: 12px 24px;
+   
+} 
+
+.card__information__title{
+    
+    color: var(--white);
+    font-weight: 600;
+    font-size: 24px;
+    
+}
+
+.card__information__title:hover, .card__information__profile span:hover {
+    
+    color: var(--cyan);
+    cursor: pointer;
+    
+}
+
+.card__information__description{
+    color: var(--soft_blue);
+    padding-top: 12px;
+    line-height: 24px;
+}
+
+
+.card__information__price{
+    gap: 6px;
+    display: inline-flex;
+    align-items: center;
+    color: var(--cyan);
+    font-weight: 400;
+ 
+}
+
+
+.card__information__days{
+    margin-top: 6px;
+    gap: 6px;
+    display: inline-flex;
+    align-items: center; 
+    color: var(--soft_blue);
+    font-weight: 300;   
+    position: relative;
+    left: 42px;
+   
+}
+
+
+.card__information__profile{
+    display: flex;
+    align-items: center;
+    padding:  12px 0;
+    gap: 12px;
+    border-top: 2px solid var(--very_darkblue_line);
+    margin-top: 12px;
+}
+
+.card__information__profile img{
+    
+    width: 32px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    margin-top: 6px;
+ 
+}
+
+.card__information__profile {
+    color: var(--soft_blue);
+}
+.card__information__profile span{
+    color: var(--white);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: var(--soft_blue);
+
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
